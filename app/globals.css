@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --radius: 0.5rem;
+}
+
+html, body, :root{
+  height: 100%;
+}
+
+body{
+  @apply bg-white text-slate-800 antialiased;
+}
+
+.container-section{
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section{
+  @apply py-12 sm:py-16 lg:py-20;
+}
+
+
+
