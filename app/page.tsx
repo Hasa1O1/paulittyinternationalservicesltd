@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { SERVICES, CORE_VALUES, VISION, MISSION } from '@/lib/constants'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
 
 export default function HomePage() {
   return (
@@ -13,12 +14,12 @@ export default function HomePage() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-900">Commercial Printing, PPE and Landscaping</h1>
             <p className="mt-4 text-slate-700">Paulittty International Services Ltd delivers professional printing solutions, reliable PPE supply, and quality landscaping services for organizations across Zambia.</p>
             <div className="mt-6 flex gap-4">
-              <Button asChild>
-                <Link href="/services">Explore Services</Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link href="/contact">Contact Us</Link>
-              </Button>
+              <Link href="/services" className={cn(buttonVariants())}>
+                Explore Services
+              </Link>
+              <Link href="/contact" className={cn(buttonVariants({ variant: 'outline' }))}>
+                Contact Us
+              </Link>
             </div>
           </div>
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl">
@@ -41,9 +42,9 @@ export default function HomePage() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md">
                     <Image alt={s.title} src={s.image} fill className="object-cover" />
                   </div>
-                  <Button className="mt-4 w-full" asChild>
-                    <Link href={`/services/${s.slug}`}>View Details</Link>
-                  </Button>
+                  <Link href={`/services/${s.slug}`} className={cn(buttonVariants(), "mt-4 w-full")}>
+                    View Details
+                  </Link>
                 </CardContent>
               </Card>
             ))}
