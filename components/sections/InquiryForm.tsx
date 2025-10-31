@@ -34,7 +34,7 @@ export function InquiryForm({ service }: { service: string }) {
   return (
     <div className="rounded-lg border bg-white p-6">
       <h3 className="text-lg font-semibold">Request a quote for {service}</h3>
-      <form action={onSubmit} className="mt-4 grid gap-4 sm:grid-cols-2">
+      <form onSubmit={(e) => { e.preventDefault(); onSubmit(new FormData(e.currentTarget)); }} className="mt-4 grid gap-4 sm:grid-cols-2">
         <Input name="name" placeholder="Your name" required />
         <Input name="email" type="email" placeholder="Email" required />
         <Input name="phone" placeholder="Phone" />

@@ -9,7 +9,6 @@ export function Footer() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-slate-800">{COMPANY.name}</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:underline">Privacy</Link>
             <Link href="/contact" className="hover:underline">Contact</Link>
           </div>
         </div>
