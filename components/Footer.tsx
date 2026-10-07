@@ -1,13 +1,10 @@
 import Link from 'next/link'
 import { COMPANY, SERVICES } from '@/lib/constants'
-import { Facebook, Linkedin, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react'
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react'
 
 const socialLinks = [
-  { name: 'Facebook', icon: Facebook, href: 'https://facebook.com' },
-  { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
-  { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
-  { name: 'Instagram', icon: Instagram, href: 'https://instagram.com' },
-  { name: 'YouTube', icon: Youtube, href: 'https://youtube.com' }
+  { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/share/1E8vhsNo5n/?mibextid=wwXIfr' },
+  { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/paulittyservices?stkn=MTBhMWEzb3I2d2gwYw==' }
 ]
 
 export function Footer() {
@@ -21,7 +18,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-white">{COMPANY.name}</h3>
             <p className="text-sm leading-relaxed">
-              Delivering professional printing solutions, reliable PPE supply, and quality landscaping services across Zambia.
+              Delivering professional printing and IT services for businesses across Zambia.
             </p>
             {/* Social Media Links */}
             <div className="flex gap-3 pt-2">
@@ -60,11 +57,6 @@ export function Footer() {
               <li>
                 <Link href="/services" className="hover:text-white transition-colors duration-200">
                   Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/clients" className="hover:text-white transition-colors duration-200">
-                  Clients
                 </Link>
               </li>
               <li>
@@ -109,17 +101,17 @@ export function Footer() {
                   {COMPANY.email}
                 </a>
               </li>
-              {COMPANY.phone && (
-                <li className="flex items-center gap-3">
+              {COMPANY.phones?.map((phone) => (
+                <li key={phone} className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-brand-400 flex-shrink-0" />
                   <a
-                    href={`tel:${COMPANY.phone}`}
+                    href={`tel:${phone.replace(/\s+/g, '')}`}
                     className="text-sm hover:text-white transition-colors duration-200"
                   >
-                    {COMPANY.phone}
+                    {phone}
                   </a>
                 </li>
-              )}
+              ))}
             </ul>
           </div>
         </div>

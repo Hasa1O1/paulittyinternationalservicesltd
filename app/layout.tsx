@@ -8,17 +8,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Paulittty International Services Ltd',
-  description: 'Commercial printing, PPE, and landscaping services in Zambia',
+  description: 'Commercial printing and IT services in Zambia',
   keywords: [
     'Printing',
-    'PPE',
-    'Landscaping',
+    'IT Services',
     'Zambia',
     'Commercial Printers',
   ],
   openGraph: {
     title: 'Paulittty International Services Ltd',
-    description: 'Commercial printing, PPE, and landscaping services in Zambia',
+    description: 'Commercial printing and IT services in Zambia',
     type: 'website'
   },
   metadataBase: new URL('https://paulittty.example.com')

@@ -60,7 +60,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center text-center p-6 rounded-lg bg-slate-50">
             <Briefcase className="h-12 w-12 text-brand-700 mb-4" />
             <div className="text-3xl font-bold text-brand-900">10+</div>
-            <p className="mt-2 text-sm text-slate-600">Major Clients</p>
+            <p className="mt-2 text-sm text-slate-600">Business Partnerships</p>
           </div>
         </div>
       </div>
@@ -79,11 +79,11 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-brand-900 mb-4">Our Journey Since 2009</h3>
                   <p className="text-slate-700 mb-4">
                     Incorporated in 2009, the company evolved from a secretarial services business into a full-time
-                    commercial printing provider and diversified services company.
+                    commercial printing provider and diversified business services company.
                   </p>
                   <p className="text-slate-700">
-                    Over the years, we have expanded to include PPE supply and landscaping maintenance services, 
-                    building on our reputation for quality and reliability.
+                    Over the years, we have grown our capability to serve clients with dependable business support
+                    and technology-driven solutions, building on our reputation for quality and reliability.
                   </p>
                 </div>
               </div>
@@ -96,12 +96,12 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-brand-900 mb-4">Growth & Expansion</h3>
                   <p className="text-slate-700 mb-4">
-                    Starting as a secretarial services company, we transitioned to printing and are now in 
-                    full-time printing business while diversifying into additional service areas.
+                    Starting as a secretarial services company, we transitioned into a stronger commercial print and
+                    service-focused business built around reliability, responsiveness, and value.
                   </p>
                   <p className="text-slate-700">
-                    Today, we serve clients across the Copperbelt and beyond, providing comprehensive 
-                    business solutions with the spirit of quality.
+                    Today, we serve clients across the Copperbelt and beyond, providing practical business solutions
+                    with the spirit of quality.
                   </p>
                 </div>
               </div>

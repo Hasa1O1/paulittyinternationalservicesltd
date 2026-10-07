@@ -11,8 +11,8 @@ export default function HomePage() {
       <section className="section bg-gradient-to-br from-brand-50 via-white to-slate-50">
         <div className="container-section grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-900">Commercial Printing, PPE and Landscaping</h1>
-            <p className="mt-4 text-slate-700">Paulittty International Services Ltd delivers professional printing solutions, reliable PPE supply, and quality landscaping services for organizations across Zambia.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-900">Commercial Printing & IT Services</h1>
+            <p className="mt-4 text-slate-700">Paulittty International Services Ltd delivers professional printing and reliable IT solutions for organizations across Zambia.</p>
             <div className="mt-6 flex gap-4">
               <Link href="/services" className={cn(buttonVariants())}>
                 Explore Services

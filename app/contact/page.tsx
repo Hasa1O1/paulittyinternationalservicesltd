@@ -13,8 +13,22 @@ export default function ContactPage() {
           <div className="mt-6 rounded-lg border bg-white p-6">
             <p className="font-semibold">Address</p>
             <p className="text-slate-700">{COMPANY.address}</p>
+
+            <p className="mt-4 font-semibold">Phone</p>
+            <div className="space-y-2 text-slate-700">
+              {COMPANY.phones?.map((phone) => (
+                <p key={phone}>
+                  <a href={`tel:${phone.replace(/\s+/g, '')}`} className="hover:text-brand-700">
+                    {phone}
+                  </a>
+                </p>
+              ))}
+            </div>
+
             <p className="mt-4 font-semibold">Email</p>
-            <p>{COMPANY.email}</p>
+            <a href={`mailto:${COMPANY.email}`} className="text-slate-700 hover:text-brand-700">
+              {COMPANY.email}
+            </a>
           </div>
           <div className="mt-6 aspect-[16/9] w-full rounded-lg">
             <iframe
