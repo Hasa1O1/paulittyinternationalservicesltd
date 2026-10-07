@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import logo from '@/lib/logo.png'
 import { cn } from '@/lib/utils'
 
 const nav = [
@@ -20,7 +19,7 @@ export function Navbar() {
       <div className="container-section flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-10 w-10 overflow-hidden rounded-full border border-brand-200 bg-white shadow-sm">
-            <Image src={logo} alt="Paulittty International Services Ltd logo" fill className="object-contain p-1" />
+            <Image src="/logo.png" alt="Paulittty International Services Ltd logo" fill className="object-contain p-1" />
           </div>
           <span className="text-base font-bold text-brand-800">Paulittty</span>
         </Link>

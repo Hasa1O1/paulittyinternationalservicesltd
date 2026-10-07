@@ -33,6 +33,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# images folder
-lib
+# images
+public/images
 
