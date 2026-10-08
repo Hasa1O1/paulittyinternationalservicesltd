@@ -16,43 +16,43 @@ const portfolioGroups: PortfolioGroup[] = [
   {
     title: 'Business Cards',
     items: [
-      '/portfolio/business cards/9af45b03-6354-4ae2-a09b-853c8af6e88a.jpg',
-      '/portfolio/business cards/2112ead2-d6d0-4731-a0c1-87812dee0554.jpg'
+      '/images/business cards/9af45b03-6354-4ae2-a09b-853c8af6e88a.jpg',
+      '/images/business cards/2112ead2-d6d0-4731-a0c1-87812dee0554.jpg'
     ]
   },
   {
     title: 'Wedding Cards',
     items: [
-      '/portfolio/Wedding Cards/9AC2FE10-095C-4A2A-AD78-90B79C62EB15.jpg',
-      '/portfolio/Wedding Cards/34F02381-BFFE-4034-A48A-B68CC4DFC42C.jpg',
-      '/portfolio/Wedding Cards/70C3C41E-D190-4239-9C75-38B852EEC5C1.jpg'
+      '/images/Wedding Cards/9AC2FE10-095C-4A2A-AD78-90B79C62EB15.jpg',
+      '/images/Wedding Cards/34F02381-BFFE-4034-A48A-B68CC4DFC42C.jpg',
+      '/images/Wedding Cards/70C3C41E-D190-4239-9C75-38B852EEC5C1.jpg'
     ]
   },
   {
     title: 'Banners',
     items: [
-      '/portfolio/banners/375adec2-6c33-4898-9dee-1706385c92fb.jpg',
-      '/portfolio/banners/543e811d-73d6-4b2b-89a3-6e1314c34e16.jpg',
-      '/portfolio/banners/f2531e91-3a7e-42a4-a7b7-7324fc1ea111.jpg'
+      '/images/banners/375adec2-6c33-4898-9dee-1706385c92fb.jpg',
+      '/images/banners/543e811d-73d6-4b2b-89a3-6e1314c34e16.jpg',
+      '/images/banners/f2531e91-3a7e-42a4-a7b7-7324fc1ea111.jpg'
     ]
   },
   {
     title: 'Company Profiles',
     items: [
-      '/portfolio/company profiles/20220412_152806.jpg'
+      '/images/company profiles/20220412_152806.jpg'
     ]
   },
   {
     title: 'Brochures',
     items: [
-      '/portfolio/Brochures/20210108_132339.jpg'
+      '/images/Brochures/20210108_132339.jpg'
     ]
   },
   {
     title: 'Books & T-shirt Printing',
     items: [
-      '/portfolio/books/20220422_192137.jpg',
-      '/portfolio/T-shirt printing/DF394249-789B-47D3-913B-F016B0675B44.jpg'
+      '/images/books/20220422_192137.jpg',
+      '/images/T-shirt printing/DF394249-789B-47D3-913B-F016B0675B44.jpg'
     ]
   }
 ]
