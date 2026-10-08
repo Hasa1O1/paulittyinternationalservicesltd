@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulittty International Services Ltd</title>
+    <meta name="description" content="Commercial printing and IT services in Zambia">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .container-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur">
+        <div class="container-section flex h-16 items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="relative h-10 w-10 overflow-hidden rounded-full border border-brand-200 bg-white shadow-sm">
+                    <img src="images/logo.png" alt="Paulittty International Services Ltd logo" class="h-full w-full object-contain p-1">
+                </div>
+                <span class="text-base font-bold text-brand-800">Paulittty</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-brand-700">Home</a>
+                <a href="about.html" class="text-sm font-medium text-slate-700 hover:text-brand-700">About</a>
+                <a href="services.html" class="text-sm font-medium text-slate-700 hover:text-brand-700">Services</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-700 hover:text-brand-700">Contact</a>
+                <a href="contact.html" class="rounded-md bg-brand-700 text-white px-4 py-2 text-sm hover:bg-brand-800">Get in touch</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden transition-all">
+            <div class="container-section grid gap-4 py-4">
+                <a href="index.html" class="text-sm font-medium text-slate-700">Home</a>
+                <a href="about.html" class="text-sm font-medium text-slate-700">About</a>
+                <a href="services.html" class="text-sm font-medium text-slate-700">Services</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-700">Contact</a>
+                <a href="contact.html" class="rounded-md bg-brand-700 text-white px-4 py-2 text-sm">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section bg-gradient-to-br from-brand-50 via-white to-slate-50">
+        <div class="container-section py-12">
+            <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+                <div>
+                    <h1 class="text-4xl font-bold text-brand-900">Professional Printing & IT Services</h1>
+                    <p class="mt-4 text-lg text-slate-700">
+                        Your trusted partner for commercial printing and comprehensive IT solutions across Zambia.
+                    </p>
+                    <p class="mt-4 text-slate-700">
+                        From business cards and banners to network setup and cybersecurity, we deliver quality services that help your business grow.
+                    </p>
+                    <div class="mt-6 flex gap-4">
+                        <a href="services.html" class="rounded-md bg-brand-700 text-white px-6 py-3 font-medium hover:bg-brand-800">Our Services</a>
+                        <a href="contact.html" class="rounded-md border border-brand-700 text-brand-700 px-6 py-3 font-medium hover:bg-brand-50">Contact Us</a>
+                    </div>
+                </div>
+                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89" alt="Professional printing services" class="h-full w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container-section">
+            <h2 class="text-3xl font-bold text-brand-900 text-center">Our Services</h2>
+            <p class="mt-2 text-center text-slate-700">Comprehensive solutions for your business needs</p>
+            <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-lg border bg-white p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-brand-900">Printing Services</h3>
+                    <p class="mt-2 text-slate-700">Commercial printing: business cards, billboards, signage, menus and more.</p>
+                    <a href="services.html" class="mt-4 inline-block font-medium text-brand-700 hover:underline">View details →</a>
+                </div>
+                <div class="rounded-lg border bg-white p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-brand-900">IT Services</h3>
+                    <p class="mt-2 text-slate-700">Comprehensive IT solutions: network setup, software support, cybersecurity, and cloud services.</p>
+                    <a href="services.html" class="mt-4 inline-block font-medium text-brand-700 hover:underline">View details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-16 border-t bg-gradient-to-b from-slate-900 to-slate-800 text-slate-300">
+        <div class="container-section py-12">
+            <div class="grid gap-8 lg:grid-cols-4 md:grid-cols-2">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Paulittty International Services Ltd</h3>
+                    <p class="text-sm leading-relaxed">
+                        Delivering professional printing and IT services for businesses across Zambia.
+                    </p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="https://www.facebook.com/share/1E8vhsNo5n/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="p-2 rounded-full bg-slate-800 hover:bg-brand-700 hover:text-white transition-colors duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/paulittyservices?stkn=MTBhMWEzb3I2d2gwYw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="p-2 rounded-full bg-slate-800 hover:bg-brand-700 hover:text-white transition-colors duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-white transition-colors duration-200">Printing Services</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors duration-200">IT Services</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Get in Touch</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-400 mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span class="text-sm">Audiovision House, Obote Avenue, Town Centre, Kitwe</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-400 flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:Paulitty.inter@gmail.com" class="text-sm hover:text-white transition-colors duration-200">Paulitty.inter@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-400 flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div class="text-sm">
+                                <a href="tel:0977133018" class="hover:text-white transition-colors duration-200">0977133018</a><br>
+                                <a href="tel:0972220907" class="hover:text-white transition-colors duration-200">0972220907</a><br>
+                                <a href="tel:+260965905968" class="hover:text-white transition-colors duration-200">+260965905968</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-700">
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <p class="text-sm text-slate-400">© 2026 Paulittty International Services Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

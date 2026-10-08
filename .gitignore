@@ -36,4 +36,5 @@ next-env.d.ts
 # local image folders (too large for git)
 lib
 public/images
+static-site/images
 
