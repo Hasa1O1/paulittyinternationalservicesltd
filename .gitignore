@@ -33,6 +33,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local image folder (use public/portfolio instead)
+# local image folders (too large for git)
 lib
+public/images
 
